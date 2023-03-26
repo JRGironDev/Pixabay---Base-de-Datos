@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Pixabay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <div class="texto">
+          <h1>Encuentra la <span>imagen</span> perfecta para ti</h1>
+          <p>
+            Explora nuestra colección de imágenes y
+            <span>encuentra justo lo que necesitas</span> para tu proyecto,
+            desde fotografías hasta ilustraciones y gráficos vectoriales.
+          </p>
+          <form id="formulario">
+            <input
+              type="search"
+              id="buscar"
+              name="buscar"
+              placeholder="Busca tu imagen "
+            />
+          </form>
+          <div class="form-buttons">
+            <button class="btn-guardar" id="guardarBD">
+              Guardar en Base de Datos
+            </button>
+            <button class="btn-consultar" id="consultarBD">
+              Consultar en Base de Datos
+            </button>
+          </div>
+        </div>
+        <div class="ilustracion"></div>
+      </div>
+    </header>
+    <div class="contenedor fecha centrar-texto" id="fechaDiv"></div>
+    <div id="resultado" class="contenedor resultado"></div>
+    <div class="paginacion"></div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
